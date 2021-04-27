@@ -41,7 +41,7 @@ const Homepage = () => {
           <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
 				
 						<div className="text">
-              <h5>vásárlásról és kiszállításról</h5>
+              <h5>vásárlásról és  kiszállításról</h5>
               <h5>termékek listája</h5>
               <h5>szolgáltatások</h5>
               <h5>kapcsolat</h5>

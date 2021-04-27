@@ -51,7 +51,7 @@ git init
 git add -A
 git commit -m "Added React Project"
 git branch -M main
-git remote add origin git@github.com:GitShedar/0427Sitebuild.git
+git remote add origin git@github.com:GitShedar/sitebuild0427.git
 git push -u origin main
 
 7.Githubon a master branch-en készítünk egy másik branche-et: gh-pages
