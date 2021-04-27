@@ -1,0 +1,81 @@
+npx create-react-app
+----belép a project könyvtárba (cd frontend)
+npm install @material-ui/core - Grid,tipography
+npm install @material-ui/styles -makeStyles
+npm install @material-ui/icons
+npm install node-sass 
+npm add gh-pages
+sass --watch style.scss style.css
+
+//npm instal uuid
+//npm install fontsource-roboto
+
+
+alapszínek: #BC865C
+
+
+-----
+SASS
+-----
+sass --watch style.scss to style.css
+
+Component, ahova be akarjuk importálni:
+import '../style/style.css';
+
+
+-----
+REACT DEPLOYMENT
+----------
+React deployment (build) to Github page nagyon egyszerű, ez a videó, 
+11 perces: https://www.youtube.com/watch?v=517npPWIb8Q
+
+1.	github repository
+2.	package.json 
+
+"homepage":"https://GitShedar.github.io/sitebuild3",
+
+3.pont
+
+npm add gh-pages
+
+4.pont
+"scripts": {
+ "predeploy": "npm run build",
+"deploy":"gh-pages -d build",
+
+5.Terminal -- build folder: 
+npm run build
+
+6. Terminal
+git init
+git add -A
+git commit -m "Added React Project"
+git branch -M main
+git remote add origin git@github.com:GitShedar/webtest.git
+git push -u origin main
+
+7.Githubon a master branch-en készítünk egy másik branche-et: gh-pages
+
+8.Githubon Settings-re rámenni és letekerni a Github pages-re, ahol látni a Source-t és a publish oldalt
+
+9.megjegyzésbe betesszük a weboldalt
+
+10. VsCode terminalban npm run deploy
+
+-----
+DOCKER
+-----
+hub.docker.com
+dockershedar
+Angie8520258
+
+
+A build mappába
+
+#létrehozzuk a webservert
+FROM nginx
+
+COPY ./frontend/build usr/share/nginx/html (ha sima html---- ./
+EXPOSE 80
+
+
